@@ -1,0 +1,6 @@
+# make a copy of this file named github-backup.cfg to get started
+
+[GitHub]
+# generate a token using this page: https://github.com/settings/tokens/new
+username: yourusername
+token: LONGHEXADECIMALSTRINGGOESHERE
