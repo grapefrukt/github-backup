@@ -26,6 +26,7 @@ for repo in repos :
 	if not os.path.exists(repo.full_name) :
 		gitp('.', 'clone', repo.ssh_url, repo.full_name)
 	else :
-		gitp(repo.full_name, 'pull')
+		gitp(repo.full_name, 'fetch', '--all', '--verbose')
+		gitp(repo.full_name, 'reset', '--hard', 'origin/master')
 	
 print 'Completed backup in {0:.2f} seconds'.format(time.time() - start)
