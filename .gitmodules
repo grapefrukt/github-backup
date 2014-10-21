@@ -1,0 +1,3 @@
+[submodule "pygithub3"]
+	path = pygithub3
+	url = git@github.com:grapefrukt/python-github3.git

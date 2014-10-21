@@ -1,3 +1,7 @@
+# hack to use pygithub3 from the submodule (while waiting for a fix)
+import sys
+sys.path.append('pygithub3')
+
 from pygithub3 import Github
 import ConfigParser
 import subprocess
