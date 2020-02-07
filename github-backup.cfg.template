@@ -2,4 +2,5 @@
 
 [GitHub]
 # generate a token using this page: https://github.com/settings/tokens/new
+username: usernamegoeshere
 token: LONGHEXADECIMALSTRINGGOESHERE
