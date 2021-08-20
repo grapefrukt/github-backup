@@ -33,6 +33,6 @@ for repo in repos :
 		gitp('.', 'clone', url, 'repos/' + repo.full_name)
 	else :
 		gitp('repos/' + repo.full_name, 'fetch', '--all', '--verbose')
-		gitp('repos/' + repo.full_name, 'reset', '--hard', 'origin/master')
+		gitp('repos/' + repo.full_name, 'reset', '--hard')
 
 print('Completed backup of ' + str(count) + ' repositories in ' + str(int(time.time() - start)) + ' seconds')
